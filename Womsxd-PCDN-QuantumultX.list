@@ -5,6 +5,7 @@
 host-suffix, stun.qqlive.qq.com, reject
 host-suffix, musicstun.p2p.qq.com, reject
 host-suffix, p2p.qq.com, reject
+host-suffix, p2ptun.qq.com, reject
 host-wildcard, *.p2ptun.qq.com, reject
 host-suffix, p2pupdate.gamedl.qq.com, reject
 host-suffix, p2pupgrade.gamedl.qq.com, reject
@@ -12,6 +13,8 @@ host-suffix, stun-a1.qq.com, reject
 host-suffix, signal.qvb.qcloud.com, reject
 host-wildcard, stun*.qvb.qcloud.com, reject
 host-wildcard, *.stun*.qvb.qcloud.com, reject
+host-wildcard, apd-*.teg.tencent-cloud.net, reject
+host-wildcard, *.apd-*.teg.tencent-cloud.net, reject
 host-suffix, pcdn-query.baidu.com, reject
 host-suffix, dcdn.baidu.com, reject
 host-suffix, puncher.xiaodu.com, reject
@@ -68,3 +71,4 @@ host-wildcard, *.gslb.ubeethiesemo.com, reject
 host-suffix, log.qiniuapi.com, reject
 host-suffix, hnzkclouds.com, reject
 host-suffix, ndcpp.com, reject
+host-suffix, tpa-hcdn.iqiyi.com, reject
