@@ -1,3 +1,4 @@
+
 name: Sync upstream IP_API.js
 
 on:
@@ -32,13 +33,13 @@ jobs:
           replacement = 'var subtitle = ISP_ValidCheck(obj["org"] || obj.as) + " | " + obj["query"];'
           if source.count(anchor) != 1:
               raise SystemExit("Could not find the expected subtitle line; no update was made.")
-          Path("IP_API.js").write_text(source.replace(anchor, replacement, 1), encoding="utf-8")
+          Path("IP_API.js/IP_API.js").write_text(source.replace(anchor, replacement, 1), encoding="utf-8")
           PY
 
       - name: Commit update when changed
         shell: bash
         run: |
-          git add IP_API.js
+          git add IP_API.js/IP_API.js
           if git diff --cached --quiet; then
             exit 0
           fi
