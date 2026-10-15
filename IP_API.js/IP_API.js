@@ -34,6 +34,7 @@ var isp0 = "Cross-GFW.org";
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
+
 function City_ValidCheck(para) {
   if (para) {
     return para;
@@ -59,6 +60,7 @@ function Area_check(para) {
     return para;
   }
 }
+
 var flags = new Map([
   ["AC", "🇦🇨"],
   ["AE", "🇦🇪"],
@@ -241,6 +243,7 @@ var flags = new Map([
   ["GF", "🇬🇫"],
   ["TG", "🇹🇬"],
 ]);
+
 var body = $response.body;
 var obj = JSON.parse(body);
 var title = flags.get(obj["countryCode"]) + " " + City_ValidCheck(obj["city"]); //+Area_check(obj['country']);
